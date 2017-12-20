@@ -1,20 +1,20 @@
-body{
-background-color: #FFFDC6
+body {
+  background-color: #FFFDC6
 }
 
-
-.banner{
+.banner {
   background-image: url(photos/banner.jpg);
-  background-size: 100vw;
-  height: 25vh;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 200px;
   position: relative;
-
 }
-h1{
+
+h1 {
   font-size: 4vw;
   position: absolute;
-  left: 1100px;
+  right: 50px;
   top: 100px;
   background-color: #AD5B2B;
   border-radius: 10px;
@@ -22,17 +22,18 @@ h1{
   font-family: 'Oxygen', sans-serif;
   font-style: bold;
 }
-h2{
-  padding: 15px ;
 
+h2 {
+  padding: 15px;
 }
-nav{
+
+nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: #D3B88C;
-
 }
-a{
+
+a {
   height: 80px;
   width: 16vw;
   background-color: #AD5B2B;
@@ -40,16 +41,13 @@ a{
   text-align: center;
 }
 
-
-
-
-@media (max-width: 800px){
-nav{
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 2px;
-}
-a{
-  width: 33vw;
-}
+@media (max-width: 800px) {
+  nav {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+  }
+  a {
+    width: 33vw;
+  }
 }
