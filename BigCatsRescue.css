@@ -1,20 +1,126 @@
 .balk{
   background-color: #AD5B2B;
-  height: 80px;
+  height: 40px;
   width: 100vw;
   opacity: 0.8;
   position:fixed;
   top: 0px;
+  left: 20vw;
+}
 
+nav{
+  display:grid;
+  grid-template-areas:
+  "a b c d d d d d"
+}
+a{
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+main{
+  display: grid;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+}
+
+.fotorechts {
+  float: right;
+  padding: .2em;
+  margin-top: 0.4em;
+}
+.fotolinks {
+  float: left;
+  padding: .2em;
+  margin-top: 0.4em;}
+
+.info{
+  background-color: #FFFDC6;
+  border-radius: 10px;
+  top: 0px;
+  width: 100vw;
+  border: 20px solid  #FFFDC6;
 
 }
-body{
+.bigc{
+  background-color: #FFFDC6;
+  border: 20px solid  #FFFDC6;
+
+  grid-area: c;
+}
+h2{
+  color: #AD5B2B;
+  font-size: 20px;
+  font-family: 'oxygen' ;
+}
+h3{
+  color:#AD5B2B;
+  font-size: 18px;
+  font-family: 'oxygen';
+}
+
+p{
+  font-size: 12px;
+}
+.logo{
+  background-image: url(photos/logo.jpg);
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: fixed;
+  width: 20vw;
+  height: 20vw;
+
+}
+
+
+.bg{
   background-image: url(photos/bg.jpeg);
-  width: 100%;
-  height:100%;
+  width: 100vw;
+  height: 30vh;
   background-attachment: fixed;
   background-image: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+body, html{
+height: 100%;
+
+}
+@media (min-width: 800px){
+  .balk{
+    height: 80px;
+  }
+  a{
+    padding-top: 25px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1000px){
+  .balk{
+    left: 20vw;
+  }
+  .logo{
+    width: 20vw;
+  }
+  .bg{
+    height: 50vh;
+  }
+  h2{
+    font-size: 30px;
+    font-family: 'oxygen' ;
+  }
+  h3{
+    font-size: 28px;
+    font-family: 'oxygen';
+  }
+
+  p{
+    font-size: 25px;
+  }
 }
