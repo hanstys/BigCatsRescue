@@ -101,6 +101,7 @@ height: 100%;
   }
 }
 
+/* Alle schermen groter dan 1000px */
 @media (min-width: 1000px){
   .balk{
     left: 20vw;
@@ -109,7 +110,7 @@ height: 100%;
     width: 20vw;
   }
   .bg{
-    height: 50vh;
+    height: 50px; /* Zet in px */
   }
   h2{
     font-size: 30px;
