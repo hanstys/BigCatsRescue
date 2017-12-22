@@ -42,14 +42,14 @@ main{
   background-color: #FFFDC6;
   border-radius: 10px;
   top: 0px;
-  width: 100vw;
+  width: 98vw;
   border: 20px solid  #FFFDC6;
 
 }
 .bigc{
   background-color: #FFFDC6;
   border: 20px solid  #FFFDC6;
-
+  width: 98vw;
   grid-area: c;
 }
 h2{
